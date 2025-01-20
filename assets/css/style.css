@@ -1,0 +1,51 @@
+/* styles.css */
+footer {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(110, 79, 79); /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar1 {
+  text-align: center;
+}
+
+.logo1 img {
+  width: 250px; /* Adjust logo size */
+}
+
+.nav-links1 {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links1 li {
+  display: inline;
+}
+
+.nav-links1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.social-icons1 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons1 img {
+  width: 30px; /* Size of social media icons */
+  height: 30px;
+  border-radius: 50%; /* Optional: Makes icons circular */
+}
