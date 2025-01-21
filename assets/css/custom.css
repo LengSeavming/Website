@@ -15,6 +15,8 @@
   src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf);
 } */
 
+
+
 .center {
   padding: auto;
   color: rgb(110, 79, 79);
@@ -28,9 +30,9 @@
   font-size: 5rem;
   color: rgb(110, 79, 79);
 }
-.card-title {
+/* .card-title {
   font-size: 1rem !important;
-}
+} */
 h6,
 .h6,
 h5,
@@ -64,6 +66,17 @@ h1,
 .collapse , .navbar-collapse{
   font-size: 20px !important;
 }
-.card-title, .card-text{
-  font-size: 30px !important;
+.card-title{
+  font-size: 25px !important;
+  text-align: left !important;
+}
+.card-text{
+  font-size: 1rem !important;
+  text-align: left !important;
+}
+.container-fluid {
+  background: rgb(110, 79, 79);
+}
+.text{
+  font-size: 25px !important;
 }
