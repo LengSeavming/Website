@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H4ck3r News</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <style>
+      :root {
+        --neon-green: #0f0;
+        --neon-blue: #00f7ff;
+        --dark-bg: #0a0a0a;
+      }
+
+      body {
+        background-color: var(--dark-bg);
+        color: var(--neon-green);
+        font-family: "Courier New", monospace;
+      }
+
+      .matrix-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0.1;
+      }
+
+      @keyframes glitch {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-2px, 2px);
+        }
+        40% {
+          transform: translate(-2px, -2px);
+        }
+        60% {
+          transform: translate(2px, 2px);
+        }
+        80% {
+          transform: translate(2px, -2px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      @keyframes neonPulse {
+        0% {
+          text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green);
+        }
+        50% {
+          text-shadow: 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+        }
+        100% {
+          text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green);
+        }
+      }
+
+      @keyframes borderGlow {
+        0% {
+          box-shadow: 0 0 5px var(--neon-blue);
+        }
+        50% {
+          box-shadow: 0 0 20px var(--neon-blue);
+        }
+        100% {
+          box-shadow: 0 0 5px var(--neon-blue);
+        }
+      }
+
+      .glitch-text {
+        animation: glitch 2s infinite, neonPulse 1.5s infinite;
+      }
+
+      .nav-link:hover {
+        animation: glitch 0.3s infinite;
+        color: var(--neon-blue) !important;
+      }
+
+      .news-card {
+        background: rgba(0, 20, 0, 0.8);
+        border: 1px solid var(--neon-green);
+        transition: all 0.3s ease;
+      }
+
+      .news-card:hover {
+        animation: borderGlow 1.5s infinite;
+        transform: translateY(-5px);
+      }
+
+      .terminal-text {
+        border-right: 2px solid var(--neon-green);
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: var(--neon-green);
+        }
+      }
+
+      .category-badge {
+        background: var(--neon-blue);
+        color: var(--dark-bg);
+        animation: neonPulse 1.5s infinite;
+      }
+
+      .search-bar {
+        background: rgba(0, 255, 0, 0.1);
+        border: 1px solid var(--neon-green);
+        color: var(--neon-green);
+      }
+
+      .search-bar:focus {
+        background: rgba(0, 255, 0, 0.2);
+        box-shadow: 0 0 10px var(--neon-green);
+      }
+
+      .btn-hack {
+        background: transparent;
+        border: 1px solid var(--neon-green);
+        color: var(--neon-green);
+        transition: all 0.3s ease;
+      }
+
+      .btn-hack:hover {
+        background: var(--neon-green);
+        color: var(--dark-bg);
+        animation: glitch 0.3s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg" class="matrix-bg"></canvas>

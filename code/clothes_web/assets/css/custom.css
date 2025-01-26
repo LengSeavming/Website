@@ -1,0 +1,63 @@
+@font-face {
+  font-family: koulen;
+  src: url(../fonts/Koulen/Koulen-Regular.ttf);
+}
+@font-face {
+  font-family: battambang;
+  src: url(../fonts/Battambang/Battambang-Regular.ttf);
+}
+@font-face {
+  font-family: open-sans;
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: open-sansBold;
+  src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+.center {
+  padding: auto;
+  color: #fc266c;
+  text-align: center;
+}
+.card-text-center {
+  background-color: #fc266c !important;
+}
+.center1 {
+  text-align: center !important;
+  font-size: 5rem;
+  color: #fc266c;
+}
+.card-title {
+  font-size: 1rem !important;
+}
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin: 10px !important;
+  padding: 10px !important;
+  font-family: open-sansBold !important;
+}
+.menu_header {
+  background: #fc266c !important;
+}
+.nav-link,
+.dropdown-item {
+  font-family: koulen, open-sansBold;
+  color: #241385;
+}
+.dropdown-menu {
+  background: #a90038;
+}
+.navbar-brand {
+  width: 20px !important;
+}

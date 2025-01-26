@@ -1,0 +1,87 @@
+@font-face {
+  font-family: koulen;
+  src: url(../fonts/Koulen/Koulen-Regular.ttf);
+}
+@font-face {
+  font-family: battambang;
+  src: url(../fonts/Battambang/Battambang-Regular.ttf);
+}
+@font-face {
+  font-family: open-sans;
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: open-sansBold;
+  src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+body {
+  font-family: 'battambang', sans-serif;
+  color: #1E547D;
+}
+.margin-buttom{
+  margin-bottom: 10px;
+  color: #1E547D;
+}
+
+.form-check{
+  margin-top: 20px;
+}
+
+
+body {
+  background-color: #f8f9fa;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.login-container {
+  margin-top: 10%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.form-control {
+  margin-bottom: 15px;
+  background-color: #1E547D !important;
+}
+.btn {
+  background-color: #1E547D !important;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+}
+.form {
+  margin-left: 32px;
+}
+.color {
+  background-color: #1E547D;
+}
+.buttom-style {
+  margin-top: 20px;
+  background: #1E547D;
+  padding: 10px 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #fff !important;
+}
+.mb-3 {
+  margin-bottom: 25px !important;
+  margin-right: 40%;
+}

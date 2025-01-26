@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="js/all.js">
+  <style>
+    body {
+      background-color: #ffff;
+      background-image: url("images/Khmer\ flag.jpg");
+      backdrop-filter: blur(10px);
+
+    }
+    
+  </style>
+</head>
+
+<body class="lgin">
+  <div class="login-container">
+    <form>
+      
+      <img src="./images/form.png" class="margin-buttom" alt="..." width="50px">
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="username" class="form-label ">ឈ្មោះ:</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" class="form-control form" id="username" placeholder="បញ្ចូលឈ្មោះ">
+        </div>
+      </div>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label class="form-label" for="passwordInput">លេខសម្ងាត់:</label>
+        </div>
+        <div class="col-auto input-group">
+          <input type="password" class="form-control " id="passwordInput" aria-label="Password" placeholder="បញ្ចូលលេខសម្ងាត់">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility()">👁</button>
+          </div>
+        </div>
+      </div>
+      <div class=" mb-3 custom-checkbox ">
+        <input class="form-check-input" type="checkbox" id="rememberMe">
+        <label class="form-check-label " for="rememberMe">ចងចាំខ្ញុំ</label>
+      </div>
+
+      <a href="dasboard.html" class="buttom-style">ចូល</a>
+      <p class="mt-3"><a href="#">បើសិនជាអ្នកមិនមានគណនី? ចុះឈ្មោះ</a></p>
+    </form>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const passwordInput = document.getElementById("passwordInput");
+    const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+
+    showPasswordCheckbox.addEventListener("change", () => {
+      passwordInput.type = showPasswordCheckbox.checked ? "text" : "password";
+    });
+
+    function togglePasswordVisibility() {
+      passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+
+</html>
